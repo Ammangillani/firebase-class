@@ -32,3 +32,24 @@ function signupcall() {
       console.log(error);
     });
 }
+
+const db = firebaseApp.firestore();
+function createdata() {
+  let email = document.getElementById("email");
+  let password = document.getElementById("password");
+  console.log(email.value);
+  console.log(password.value);
+  db.collection("user")
+    .add({
+      name: name,
+      email: email,
+      password: password,
+    })
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      alert("asdasda");
+      console.log(err);
+    });
+}
