@@ -5,9 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="enter your email">
+            </div>
+            <div class="input">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="enter your password">
+            </div>
+            <div class="input-btn">
+                <button onclick="signupcall()">sign up</button>
+                <button>sign in</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="setup.js"></script>
 
 </body>
 
